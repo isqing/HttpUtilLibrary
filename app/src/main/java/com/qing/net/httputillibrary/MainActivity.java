@@ -3,6 +3,10 @@ package com.qing.net.httputillibrary;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
+
+import com.qing.net.httputillibrary.callBack.HttpCallBack;
+import com.qing.net.httputillibrary.httpUtils.HttpHelper;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(MyResponse result) {
                 Log.i(TAG, "onSuccess: "+result.getResponse());
+                Toast.makeText(getApplicationContext(),result.getResponse()+"",Toast.LENGTH_LONG).show();
             }
         });
     }

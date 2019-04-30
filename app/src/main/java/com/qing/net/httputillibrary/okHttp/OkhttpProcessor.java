@@ -1,7 +1,9 @@
-package com.qing.net.httputillibrary;
+package com.qing.net.httputillibrary.okHttp;
 
 import android.os.Handler;
-import android.util.Log;
+
+import com.qing.net.httputillibrary.httpUtils.IHttpProcessor;
+import com.qing.net.httputillibrary.callBack.Icallback;
 
 import java.io.IOException;
 import java.util.Map;
@@ -9,7 +11,6 @@ import java.util.Map;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;

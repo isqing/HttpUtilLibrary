@@ -1,4 +1,4 @@
-package com.qing.net.httputillibrary;
+package com.qing.net.httputillibrary.callBack;
 
 import com.google.gson.Gson;
 

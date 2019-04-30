@@ -1,4 +1,6 @@
-package com.qing.net.httputillibrary;
+package com.qing.net.httputillibrary.httpUtils;
+
+import com.qing.net.httputillibrary.callBack.Icallback;
 
 import java.util.Map;
 
